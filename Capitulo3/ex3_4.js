@@ -8,9 +8,5 @@ const Dura = Math.floor(pesoGrama/consumoRacao);
 const sobra = pesoGrama % consumoRacao;
 
 
-function elias (a, b){
-    
-}
-
 console.log(`A ração durará ${Dura} dias`);
 console.log(`E as sobras serão de ${sobra}`);

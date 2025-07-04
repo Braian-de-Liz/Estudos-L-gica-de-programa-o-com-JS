@@ -9,4 +9,4 @@ const parcela =(preco * 0.5)/vezes;
 
 console.log(`promoção do Veiculo ${veiculo}`);
 console.log(`Entrada de R$${entrada}`);
-console.log(`+12x de R$${parcela}`);
+console.log(`+${vezes}x de R$${parcela}`);
