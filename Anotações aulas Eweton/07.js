@@ -15,8 +15,3 @@ const carro = {
 for(let Elias in carro){
     console.log(Elias +': '+ carro[Elias]);
 }
-
-
-let oi = 2;
-
-oi = "vai tomar no cu";
