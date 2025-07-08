@@ -11,7 +11,7 @@ form.addEventListener("submit", (e) =>{
         HoraFranca = HoraFranca - 24;
     }
 
-    Resp.innerText = `Hora Agora na França é ${HoraFranca.toFixed(2)}`
+    Resp.innerText = `Hora Agora na França é ${HoraFranca.toFixed(2)}`;
 
 
 });
