@@ -1,27 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elias Triangular</title>
+    <title>Verificador de Triângulos</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
 </head>
-<style>
-    body{
-        text-align: center;
-    }
-</style>
 <body>
-    <h1>Triangulo JS</h1>
+    <h1>Verificador de Triângulos</h1>
 
-    <form action="">
+    <form id="trianguloForm">
         <div>
-            
+            <label for="lado1">1º lado do triângulo:</label><br>
+            <input type="number" id="lado1" required>
         </div>
-        
+
         <div>
-            
+            <label for="lado2">2º lado do triângulo:</label><br>
+            <input type="number" id="lado2" required>
         </div>
+
+        <div>
+            <label for="lado3">3º lado do triângulo:</label><br>
+            <input type="number" id="lado3" required>
+        </div>
+
+        <button type="submit">Verificar</button>
     </form>
-    
+
+    <h3 id="Resp" style="margin-top: 20px;"></h3>
+
+    <script src="ex4_12.js" defer></script>
 </body>
 </html>
