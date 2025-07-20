@@ -1,11 +1,3 @@
-/* const prompt = require('prompt-sync')();
-
-let numero = +prompt("digite numero");
-
-for(let i = 1; i<=10; i++){
-    console.log(`${numero} x ${i} - ${numero * i}`);
-} */
-
 const form = document.querySelector("form");
 const Resp1 = document.getElementById("Resp1");
 const Resp2 = document.getElementById("Resp2");
@@ -17,8 +9,8 @@ let valorFI = 0;
 form.addEventListener("submit", (e) => {
     e.preventDefault()
 
-    const Descricao = document.getElementById("Descricao")
-    const Valor = document.getElementById("Valor_Pagar").value;
+    const Descricao = document.getElementById("Descricao").value;
+    const Valor = +document.getElementById("Valor_Pagar").value;
 
     numcontas++;
     valorFI += Valor;
@@ -31,5 +23,5 @@ form.addEventListener("submit", (e) => {
 
     Descricao.value = "";
     Valor.value = "";
-    Descricao.focus();
+    form.Descricao.focus();
 });
