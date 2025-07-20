@@ -27,5 +27,9 @@ form.addEventListener("submit", (e) => {
 
 
     Resp1.innerText = `${resposta} -------------------------`;
-    Resp2.innerText = `${numcontas}`
+    Resp2.innerText = `${numcontas} Conta(s) - Total R$:${valorFI.toFixed(2)}`;
+
+    Descricao.value = "";
+    Valor.value = "";
+    Descricao.focus();
 });
