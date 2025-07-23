@@ -16,9 +16,11 @@ form.addEventListener("submit", (e) => {
         }
     }
 
+    Resp.style.color = "red";
     Resp.innerHTML = `
         <p>Divisores: ${divisores || "1"}</p>
         <p>Soma: ${soma}</p>
         <p>${soma === numero ? "É perfeito! ✅" : "Não é perfeito ❌"}</p>
     `;
+    form.numero.focus();
 });

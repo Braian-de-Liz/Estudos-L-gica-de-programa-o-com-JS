@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+}
+
+.text-azul {
+    color: blue;
+}
+
+h1 {
+    border-bottom-style: inset;
+}
+
+.oculta {
+    display: none;
+}
+
+.exibi {
+    display: inline;
+}
+
+.italico {
+    font-style: italic;
+}
