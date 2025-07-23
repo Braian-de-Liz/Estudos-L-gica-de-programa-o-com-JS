@@ -40,4 +40,3 @@ form.Urgência.addEventListener("click", () => {
     form.nome.value = "";
 
 });
-
