@@ -31,8 +31,8 @@ form.addEventListener("submit", (e) => {
             
             dicacao(sorteio, numero);
             
-            RespErros.innerText = `${erros.length} (${erros.join(",")})`;
-            RespChances.innerText = `Chances: ${NumChances}`;
+            RespErros.innerText = `${erros.length} (${erros.join(", ")})`;
+            RespChances.innerText = ` ${NumChances}`;
 
             if (NumChances === 0) {
                 form.Submetedor.disabled = true;
@@ -44,4 +44,8 @@ form.addEventListener("submit", (e) => {
     
     form.numero.value = "";
     form.numero.focus();
+});
+
+form.btNovo.addEventListener("click", () => {
+    location.reload();
 });
