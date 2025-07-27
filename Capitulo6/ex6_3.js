@@ -1,27 +1,30 @@
-const prompt = require("prompt-sync")();
+const form = document.querySelector("#idForm");
+const Resp = document.querySelector("pre");
+const carros = [];
 
-function Teste(string) {
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-    return string;
-}
+    const Modelo = document.getElementById("Modelo").value;
+    const Preco = +document.getElementById("preco").value;
 
+    carros.push({ Modelo, Preco });
 
-const elias = "elias";
+    form.Modelo.value = "";
+    form.Preco.value = "";;
 
-const numero1 = +prompt("Digite seu primeiro Número");
-const numero2 = +prompt("Digite seu Segundo Número");
+    Modelo.fucus();
 
+    form.btListar.dispatchEvent(new Event("click"));
+});
 
-function soma(num1, num2) {
-    num1 += num2;
+form.btListar.addEventListener("click", () => {
+    if (carros.length == 0) {
+        alert("não há carros na Lista");
+        return;
+    }
 
-    return num1
-}
-/* 
-const ELias = () => {
-    console.log("ELIAS");
-}
- */
-console.log(Teste(elias), soma(numero1, numero2));
-
-ELias();
+    const lista = carros.reduce((acumulador, carroAtual) => {
+        return acumulador + " " + carroAtual.Modelo;  
+    }, ""); 
+});
