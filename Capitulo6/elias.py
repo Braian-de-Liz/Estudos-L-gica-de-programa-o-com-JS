@@ -3,6 +3,7 @@ def Teste (string):
  return print(string);
 
 elias = "eliasxsxsxsxsxs"
+Teste(elias);
 
 
-Teste(elias)
+# elias está comentando
