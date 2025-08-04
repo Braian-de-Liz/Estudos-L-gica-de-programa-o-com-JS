@@ -20,4 +20,6 @@ while (n1 !== n2) {
     }
 }
 
+
+
 console.log("Números iguais:", n1);
