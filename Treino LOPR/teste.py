@@ -1,13 +1,11 @@
-elias = [1, 9, 4];
-soma = 0;
+elias = [1, 9, 4]
+soma = 0
 
-i=0
+for i in range(len(elias)):
+    soma += elias[i]
 
-for i in elias:
-    soma =+ elias[i];
+comprimento = len(elias)
+media = soma / comprimento
 
-comprimento = len(elias); 
+print("A média do vetor é", media)
 
-media = soma/comprimento;
-
-print("a média dp vetor é ", media);

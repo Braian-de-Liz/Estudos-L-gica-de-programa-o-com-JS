@@ -1,10 +1,11 @@
-elias = [1, 9, 4]
-soma = 0
+const elias = [1, 74, 10, 7];
+let soma = 0;
 
-for i in range(len(elias)):
-    soma += elias[i]
+for(let i = 0; i < elias.length; i++){
+    soma += elias[i];
 
-comprimento = len(elias)
-media = soma / comprimento
+}
 
-print("A média do vetor é", media)
+let media = soma/elias.length;
+
+console.log(`A média dos vetor é ${media}`);
