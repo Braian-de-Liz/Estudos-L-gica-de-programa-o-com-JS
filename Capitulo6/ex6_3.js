@@ -28,3 +28,8 @@ form.btListar.addEventListener("click", () => {
         return acumulador + " " + carroAtual.Modelo;  
     }, ""); 
 });
+
+
+
+
+document.createElement()
