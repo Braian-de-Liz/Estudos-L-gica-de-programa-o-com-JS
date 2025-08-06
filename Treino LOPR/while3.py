@@ -7,8 +7,6 @@ while i > 0 :
 
     if numero % 2 == 0:
         print(numero, "PAR")
-
     else :
         print(numero, "IMPAR");
-
     i -= 1

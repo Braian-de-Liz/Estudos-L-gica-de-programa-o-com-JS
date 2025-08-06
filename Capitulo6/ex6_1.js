@@ -4,10 +4,15 @@ const RespList = document.getElementById("Listinha");
 
 const pacientes = [];
 
+
+const criarFodasse = () => {
+    
+};
+
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const nomePac = document.getElementById("Nome").value; 
+    const nomePac = document.getElementById("Nome").value;
 
     pacientes.push(nomePac);
     let Lista = "";
@@ -17,16 +22,18 @@ form.addEventListener("submit", (e) => {
     }
 
     RespList.innerText = Lista;
-    document.getElementById("Nome").value = ""; 
+    document.getElementById("Nome").value = "";
     document.getElementById("Nome").focus();
+
+
 });
 
 document.getElementById("Urgência").addEventListener("click", () => {
-    const nomePac = document.getElementById("Nome").value; 
-    
-    if (!nomePac) { 
+    const nomePac = document.getElementById("Nome").value;
+
+    if (!nomePac) {
         alert("Informe o paciente de urgência RÁPIDO");
-        document.getElementById("Nome").focus(); 
+        document.getElementById("Nome").focus();
     }
 
     pacientes.unshift(nomePac);
@@ -35,7 +42,7 @@ document.getElementById("Urgência").addEventListener("click", () => {
     pacientes.forEach((paciente, i) => {
         Lista += `${i + 1}. ${paciente}\n`;
     });
-    
+
     RespList.innerText = Lista;
-    document.getElementById("Nome").value = ""; 
+    document.getElementById("Nome").value = "";
 });
