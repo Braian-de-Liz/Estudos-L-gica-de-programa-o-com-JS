@@ -34,11 +34,3 @@ let eliasi = 0;
 
 
 printa(elias);
-
-
-
-
-
-
-
-
