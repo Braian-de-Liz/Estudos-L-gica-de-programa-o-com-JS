@@ -1,6 +1,6 @@
 import random
 
-i = int(input("Quantos números você quer analisar"))
+i = int(input("Quantos números você quer analisar "))
 
 while i > 0 :
     numero = [random.randint(1, 100)]
